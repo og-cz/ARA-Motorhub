@@ -38,12 +38,6 @@
 </div>
 
 <br>
-
-<div align="center">
-  <img src="sql/readme/1.png" alt="ARA Motorhub UI/UX Showcase" width="800"/>
-</div>
-
-<br>
 <br>
 
 <div align="center">
@@ -55,6 +49,14 @@
 
 <div align="center">
   <img src="sql/readme/3.png" alt="ARA Motorhub Admin Showcase" width="800"/>
+</div>
+
+<br>
+<br>
+<br>
+
+<div align="center">
+  <img src="sql/readme/1.png" alt="ARA Motorhub UI/UX Showcase" width="800"/>
 </div>
 
 ---
