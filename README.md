@@ -7,8 +7,7 @@
 > **find** your  
 > motor **needs.**
 
----
-
+<!--
 ## Table of Contents
 
 -  [Project Overview](#project-overview)
@@ -20,6 +19,7 @@
   -  [Seller Side](#seller-side)
   -  [User Settings](#user-settings)
 -  [Developer](#developer)
+-->
 
 ---
 
