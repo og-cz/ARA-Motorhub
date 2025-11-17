@@ -113,7 +113,7 @@ public class DashboardRowController {
     }
 
     private void removeOrderFromUI() {
-        Parent thisRow = labelName.getParent().getParent(); // Depends on your FXML layout depth
+        Parent thisRow = labelName.getParent().getParent(); 
         ((VBox) thisRow.getParent()).getChildren().remove(thisRow);
     }
 

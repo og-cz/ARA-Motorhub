@@ -27,7 +27,7 @@ public class FavoriteController {
 
     @FXML
     void initialize() {
-        // Populate ComboBox with categories
+        // populate ComboBox with categories
         try (Connection conn = DatabaseConnection.connect();
              PreparedStatement stmt = conn.prepareStatement("SELECT name FROM category");
              ResultSet rs = stmt.executeQuery()) {
@@ -40,7 +40,7 @@ public class FavoriteController {
             e.printStackTrace();
         }
 
-        // Handle category selection
+        // handle category selection
         categoryComboBox.setOnAction(event -> {
             String selectedCategory = categoryComboBox.getValue();
             if (selectedCategory != null && !selectedCategory.isEmpty()) {

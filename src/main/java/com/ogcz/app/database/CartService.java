@@ -10,7 +10,7 @@ public class CartService {
         int userId = UserSession.getCurrentUser().getUserId();
 
         try (Connection conn = DatabaseConnection.connect()) {
-            // 1. Check for existing cart
+            // 1. check for existing cart
             String checkSql = "SELECT id FROM carts WHERE customer_id = ? AND checked_out = 0";
             try (PreparedStatement checkStmt = conn.prepareStatement(checkSql)) {
                 checkStmt.setInt(1, userId);
@@ -20,7 +20,7 @@ public class CartService {
                 }
             }
 
-            // 2. Create new cart
+            // 2. create new cart
             String insertSql = "INSERT INTO carts (customer_id, checked_out) VALUES (?, 0)";
             try (PreparedStatement insertStmt = conn.prepareStatement(insertSql, PreparedStatement.RETURN_GENERATED_KEYS)) {
                 insertStmt.setInt(1, userId);

@@ -13,20 +13,20 @@ public class Category {
         this.name = name;
     }
 
-    // Getters
+    // getters
     public int getId() { return id; }
     public String getName() { return name; }
 
-    // Setters
+    // setters
     public void setId(int id) { this.id = id; }
     public void setName(String name) { this.name = name; }
 
     @Override
     public String toString() {
-        return name; // So ComboBox displays category name
+        return name; // so ComboBox displays category name
     }
 
-    // ✅ Fetch all categories from database
+    //fetch all categories from database
     public static List<Category> getAllCategories() {
         List<Category> categories = new ArrayList<>();
 
@@ -43,7 +43,7 @@ public class Category {
             }
 
         } catch (SQLException e) {
-            e.printStackTrace(); // Consider logging instead in production
+            e.printStackTrace(); 
         }
 
         return categories;

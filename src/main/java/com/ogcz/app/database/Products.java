@@ -6,7 +6,6 @@ import java.util.List;
 
 public class Products {
 
-    // --- Fields ---
     private int productId;
     private String productName;
     private String productPrice;
@@ -23,7 +22,7 @@ public class Products {
     private String storeAddress;
     private String storeBarangay;
 
-    // --- Constructor used in getProductsBySellerIdAndCategory ---
+    // constructor used in getProductsBySellerIdAndCategory
     public Products(int productId, int sellerId, int categoryId, String productName,
             String description, double price, int stock, String status, Timestamp createdAt) {
         this.productId = productId;
@@ -40,7 +39,7 @@ public class Products {
     public Products() {
     }
 
-    // --- Getters ---
+    // getters
     public int getProductId() {
         return productId;
     }
@@ -97,7 +96,7 @@ public class Products {
         return description;
     }
 
-    // --- Setters ---
+    // Setters
     public void setProductId(int productId) {
         this.productId = productId;
     }
@@ -154,8 +153,7 @@ public class Products {
         this.description = description;
     }
 
-    // --- Static Data Access Methods ---
-
+    // Static Data Access Methods
     public static List<Products> getProductsBySellerIdAndCategory(int sellerId, String categoryName) {
         List<Products> products = new ArrayList<>();
         String sql = """

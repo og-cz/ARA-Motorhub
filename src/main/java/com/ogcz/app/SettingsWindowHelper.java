@@ -16,7 +16,8 @@ public class SettingsWindowHelper {
 
         System.out.println("Universal Settings Clicked!");
         try {
-            FXMLLoader loader = new FXMLLoader(SettingsWindowHelper.class.getResource("/fxml/settings/EditProfile.fxml"));
+            FXMLLoader loader = new FXMLLoader(
+                    SettingsWindowHelper.class.getResource("/fxml/settings/EditProfile.fxml"));
             Parent root = loader.load();
 
             Stage stage = new Stage();
@@ -25,15 +26,14 @@ public class SettingsWindowHelper {
             stage.setResizable(false);
             stage.setTitle("ARA Motorhub: Settings (@_ogcreate)");
             stage.setScene(new Scene(root));
-            stage.initModality(Modality.APPLICATION_MODAL); // Make it modal
-            stage.initOwner(sourceNode.getScene().getWindow()); // Tie it to the caller window
-            stage.showAndWait(); // Block until it's closed
+            stage.initModality(Modality.APPLICATION_MODAL); // make it modal
+            stage.initOwner(sourceNode.getScene().getWindow()); // tie it to the caller window
+            stage.showAndWait(); // block until its closed
 
         } catch (IOException e) {
             e.printStackTrace();
         }
 
-        
     }
 
     public static void logout(Stage currentStage) {
@@ -41,7 +41,8 @@ public class SettingsWindowHelper {
             FXMLLoader loader = new FXMLLoader(SettingsWindowHelper.class.getResource("/fxml/auth/Login.fxml"));
             Parent root = loader.load();
 
-            Stage primaryStage = currentStage.getOwner() instanceof Stage ? (Stage) currentStage.getOwner() : currentStage;
+            Stage primaryStage = currentStage.getOwner() instanceof Stage ? (Stage) currentStage.getOwner()
+                    : currentStage;
 
             primaryStage.setScene(new Scene(root));
             primaryStage.show();

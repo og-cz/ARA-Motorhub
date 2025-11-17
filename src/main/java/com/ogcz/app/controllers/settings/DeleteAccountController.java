@@ -97,7 +97,6 @@ public class DeleteAccountController {
         });
     }
 
-    // Switching scenes - Do not modify
     @FXML
     void switchToDeleteAccount(ActionEvent event) {
         loadFXMLScene("/fxml/settings/DeleteAccount.fxml", event);

@@ -51,7 +51,7 @@ public class CartController {
         try (Connection conn = DatabaseConnection.connect()) {
             conn.setAutoCommit(false);
 
-            // Get cart_id
+            // get cart_id
             int cartId = -1;
             try (PreparedStatement stmt = conn.prepareStatement("SELECT cart_id FROM cart WHERE customer_id = ?")) {
                 stmt.setInt(1, customerId);
@@ -64,7 +64,7 @@ public class CartController {
                 }
             }
 
-            // Check if cart is empty
+            // check if cart is empty
             int cartItemCount = 0;
             try (PreparedStatement stmt = conn.prepareStatement("SELECT COUNT(*) FROM cart_item WHERE cart_id = ?")) {
                 stmt.setInt(1, cartId);
@@ -79,7 +79,7 @@ public class CartController {
                 return;
             }
 
-            // Insert into `order`
+            // insert into `order`
             String insertOrderSQL = "INSERT INTO `order` (customer_id, address, total_price, status, created_at) VALUES (?, ?, ?, ?, CURRENT_TIMESTAMP)";
             int generatedOrderId = -1;
             try (PreparedStatement stmt = conn.prepareStatement(insertOrderSQL,
@@ -121,7 +121,7 @@ public class CartController {
                 }
             }
 
-            // Clear cart
+            // clear cart
             try (PreparedStatement stmt = conn.prepareStatement("DELETE FROM cart_item WHERE cart_id = ?")) {
                 stmt.setInt(1, cartId);
                 stmt.executeUpdate();
@@ -129,7 +129,7 @@ public class CartController {
 
             conn.commit();
 
-            // Reset UI
+            // reset UI
             vboxCartProducts.getChildren().clear();
             totalPrice = 0;
             labelTotalPrice.setText("0.00");

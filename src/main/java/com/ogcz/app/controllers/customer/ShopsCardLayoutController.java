@@ -28,7 +28,7 @@ public class ShopsCardLayoutController {
 
     public void setData(Shops shop) {
         this.currentShop = shop;
-        System.out.println("SetData called with shop: " + shop.getShopName()); // ✅
+        System.out.println("SetData called with shop: " + shop.getShopName()); 
         shopName.setText(shop.getShopName());
         shopDistance.setText(shop.getShopDistance());
     }

@@ -140,7 +140,7 @@ public class LoginController {
 
     @FXML
     private void handleBackgroundClick(MouseEvent event) {
-        dummyFocus.requestFocus(); // This removes focus from email/password fields
+        dummyFocus.requestFocus(); // this removes focus from email/password fields
     }
 
     // switch pictures

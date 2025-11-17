@@ -87,7 +87,7 @@ public class ShopsQuickViewController implements Initializable {
             System.err.println("ERROR: Shop passed to setShopDetails is null!");
             return;
         }
-        System.out.println("🚀 Received shop ID: " + shop.getShopId());
+        System.out.println("Received shop ID: " + shop.getShopId());
 
         this.shop = shop;
 
