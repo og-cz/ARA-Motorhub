@@ -25,5 +25,5 @@ Thumbs.db        # Windows
 *.db
 *.sql
 
-# Java compiled classes (if ever outside target/)
 *.class
+.vscode
