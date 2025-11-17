@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="sql/readme/main-logo.png" alt="ARA Motorhub Logo"/>
+  <img src="sql/readme/header.png" alt="ARA Motorhub Logo"/>
 </div>
 
 ---
@@ -34,7 +34,7 @@
 <br>
 
 <div align="center">
-  <img src="sql/readme/aragif.gif" alt="ARA Motorhub Animated Logo" width="300"/>
+  <img src="sql/readme/ara-logo.gif" alt="ARA Motorhub Animated Logo" width="300"/>
 </div>
 
 <br>
