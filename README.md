@@ -149,8 +149,9 @@
 - Delete Account
 - Log Out
 
----
 
+<!--
+---
 
 
 ## Developer
@@ -167,4 +168,5 @@
       </td>
   </table>
 </div>
+-->
 
