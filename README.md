@@ -149,24 +149,9 @@
 - Delete Account
 - Log Out
 
-
-<!--
 ---
 
-
-## Developer
-
 <div align="center">
-  <table>
-    <tr>
-      <td width="200" align="center" valign="top">
-        <img src="sql/readme/ogcz.png" alt="Carl Zeus Anastacio" width="120" style="border-radius:50%;"/>
-        <p>
-          <strong>OGCZ</strong><br/>
-          <em>Project Lead • Project Manager • UI/UX Designer • Front-end Developer • Back-end Developer • Documentation • Database Designer</em>
-        </p>
-      </td>
-  </table>
+  <img src="sql/readme/header.png" alt="ARA Motorhub Logo"/>
 </div>
--->
 
